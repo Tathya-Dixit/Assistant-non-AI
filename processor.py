@@ -39,15 +39,12 @@ def process(command):
     elif command == "time":
          speak("Sir, the time is : "+time)
     elif command == "music":
-        os.startfile("C:\\Users\\Sanjeev\\Music\\Playlists\\my songs.zpl")
+        os.startfile("playlist path")
         speak("ok sir! here's your music enjoy!")
     elif command == 'search wikipedia':
         speak("what u want to search")
         search = takecommand()
         res = wikipedia.summary(search, sentences=3)
-        speak("according to wikipedia "+res)
-    elif command == "sublime":
-        os.startfile("C:\\Program Files\\Sublime Text 3\\sublime_text.exe")
-        speak("opening it sir")
+        speak("according to wikipedia : "+res)
     else:
          pass
